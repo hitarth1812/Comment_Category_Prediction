@@ -2,11 +2,11 @@
 
 A comprehensive machine learning pipeline for multi-class comment classification with model ensemble and threshold optimization.
 
-## 📋 Overview
+## Overview
 
 This notebook solves a **comment category prediction challenge** using advanced feature engineering, multiple machine learning models, and sophisticated ensemble techniques. The pipeline classifies comments into 4 categories with robust data cleaning, text processing, and model blending.
 
-## 🎯 Challenge
+## Challenge
 
 **Dataset**: Comment Category Prediction Challenge (Kaggle)  
 **Task**: Multi-class classification (4 classes)  
@@ -18,7 +18,7 @@ This notebook solves a **comment category prediction challenge** using advanced 
 - **Class Distribution**: Imbalanced (handled via class weights)
 - **Features**: Text + Tabular metadata
 
-## 🔧 Features
+## Features
 
 ### Text Features
 - **Base**: Comment field (cleaned and tokenized)
@@ -42,7 +42,7 @@ This notebook solves a **comment category prediction challenge** using advanced 
 - Flags: Presence indicators for each identity category
 - Count: Total identity attributes mentioned
 
-## 📊 Pipeline Architecture
+## Pipeline Architecture
 
 ### 1. Data Cleaning & Validation
 - Remove outliers (upvote/downvote 99th percentile for training)
@@ -105,7 +105,7 @@ Per-Class Threshold Optimization:
   - Optimized on validation set via grid search
 ```
 
-## 📈 Model Performance
+## Model Performance
 
 | Model | Accuracy | Macro F1 |
 |-------|----------|----------|
@@ -120,7 +120,7 @@ Per-Class Threshold Optimization:
 
 *Note: Actual performance varies based on CV folds and data splits*
 
-## 🚀 Usage
+## Usage
 
 ### Requirements
 ```
@@ -158,14 +158,14 @@ TFIDF_MAX_FEATURES = 5000
 TFIDF_NGRAM_RANGE = (1, 2)
 ```
 
-## 📁 Input Files
+## Input Files
 
 From `/kaggle/input/comment-category-prediction-challenge/`:
 - `train.csv` - Training data with labels
 - `test.csv` - Test data for predictions
 - `Sample.csv` - Sample submission format
 
-## 📤 Output
+## Output
 
 **submission.csv**
 ```
@@ -175,7 +175,7 @@ ID,label
 ...
 ```
 
-## 💡 Key Techniques
+## Key Techniques
 
 ✅ **Data Quality**: Outlier removal, value clipping, imputation  
 ✅ **Feature Engineering**: Linguistic, temporal, engagement, identity features  
@@ -187,7 +187,7 @@ ID,label
 ✅ **Model Blending**: Weighted average of 5 diverse models  
 ✅ **Memory Efficiency**: Sparse matrix handling, garbage collection  
 
-## 🎓 Learning Insights
+## Learning Insights
 
 - **Ensemble Power**: 5-way blend outperforms individual models by ~3-5% F1
 - **Class Weights**: Critical for imbalanced data (class 3 gets 2.2x weight)
@@ -195,7 +195,7 @@ ID,label
 - **Diversity Matters**: LGB + XGB + SVC + LR + Ada cover different model families
 - **Text + Tabular**: Combined feature space better than text-only approach
 
-## 📝 Notes
+## Notes
 
 - Notebook uses Kaggle environment (`/kaggle/input/`, `/kaggle/working/`)
 - Supports GPU acceleration for LightGBM/XGBoost (configurable)
@@ -203,7 +203,7 @@ ID,label
 - Results are reproducible with `RANDOM_STATE = 42`
 - All models fitted on **full training data** for final submission
 
-## 🔄 Reproducibility
+## Reproducibility
 
 ```python
 np.random.seed(42)
