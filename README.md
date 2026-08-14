@@ -177,15 +177,15 @@ ID,label
 
 ## Key Techniques
 
-✅ **Data Quality**: Outlier removal, value clipping, imputation  
-✅ **Feature Engineering**: Linguistic, temporal, engagement, identity features  
-✅ **Text Processing**: TF-IDF with n-grams, pattern tokenization  
-✅ **Class Imbalance**: Weighted class priors and sample weighting  
-✅ **Hyperparameter Tuning**: RandomizedSearchCV for optimal parameters  
-✅ **Cross-Validation**: Stratified OOF for unbiased ensemble training  
-✅ **Threshold Optimization**: Per-class probability thresholds  
-✅ **Model Blending**: Weighted average of 5 diverse models  
-✅ **Memory Efficiency**: Sparse matrix handling, garbage collection  
+ **Data Quality**: Outlier removal, value clipping, imputation  
+ **Feature Engineering**: Linguistic, temporal, engagement, identity features  
+ **Text Processing**: TF-IDF with n-grams, pattern tokenization  
+ **Class Imbalance**: Weighted class priors and sample weighting  
+ **Hyperparameter Tuning**: RandomizedSearchCV for optimal parameters  
+ **Cross-Validation**: Stratified OOF for unbiased ensemble training  
+ **Threshold Optimization**: Per-class probability thresholds  
+ **Model Blending**: Weighted average of 5 diverse models  
+ **Memory Efficiency**: Sparse matrix handling, garbage collection  
 
 ## Learning Insights
 
