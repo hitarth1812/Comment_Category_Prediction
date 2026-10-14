@@ -211,8 +211,6 @@ pd.set_option('display.max_columns', 60)
 RANDOM_STATE = 42
 ```
 
-All randomness is controlled via the RANDOM_STATE parameter.
-
 ---
 
 **Author**: Competition Solution  
